@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "geolocation_picker",
+  "appName": "weather-app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

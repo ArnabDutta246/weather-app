@@ -1,7 +1,8 @@
 {
   "name": "geolocation_picker",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

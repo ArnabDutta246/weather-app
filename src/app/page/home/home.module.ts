@@ -7,7 +7,6 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { TemperaturePipe } from 'src/app/pipes/temperature/tempareture.pipe';
 import { CurrLocWeatherComponent } from '../components/curr-loc-weather/curr-loc-weather.component';
-import { LocationNameComponent } from '../components/location-name/location-name.component';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { LocationNameComponent } from '../components/location-name/location-name
     HomePage,
    TemperaturePipe,
    CurrLocWeatherComponent,
-   LocationNameComponent
   ],
   exports:[HomePage]
 })

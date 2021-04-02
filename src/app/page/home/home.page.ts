@@ -17,7 +17,7 @@ export class HomePage {
 
   coords: any;
   address:Address;
-  demoData = DemoData;
+  cityWeather = DemoData;
   constructor(private nativeGeocoder: NativeGeocoder) { 
      //this.locate();
   }

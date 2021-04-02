@@ -1,0 +1,26 @@
+.weatherDataCard {
+  background-image: linear-gradient(
+    to right top,
+    #171714,
+    #1e1e1b,
+    #252522,
+    #2c2c29,
+    #343431
+  );
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  .temperature {
+    font-weight: lighter;
+    font-size: 55px;
+    color: white;
+    margin-block-start: 0.17em;
+  }
+  ion-icon {
+    font-size: 26px;
+  }
+  .value {
+    color: white;
+  }
+}

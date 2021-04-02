@@ -1,0 +1,57 @@
+<!-- ============= [ Data card ] ================ -->
+<ion-card class="ion-margin weatherDataCard">
+  <!-- <ion-item>
+    <ion-label slot="start" color="medium">
+      <small>Current weather</small>
+    </ion-label>
+  </ion-item> -->
+  <ion-row>
+    <ion-col size="12" class="ion-padding">
+      <ion-row>
+        <ion-col color="primary" size="4">
+          <img [src]="'https://openweathermap.org/img/w/'+weatherDetails.current.weather[0].icon+'.png'" alt="weather-app">
+        </ion-col>
+        <ion-col>
+          <h4 class="medium">{{weatherDetails.current.weather[0].description | titlecase}}</h4>
+          <h1 class="temperature">
+            {{weatherDetails.current.temp | temperature}} &#176;
+          </h1>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="12" class="ion-padding">
+    <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="thermometer-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.pressure}}</p>
+        <p>Pressure</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="cloudy-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.clouds}}</p>
+        <p>Clouds</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="eye-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.visibility}}</p>
+        <p>Visibility</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="thermometer-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.pressure}}</p>
+        <p>Pressure</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="cloudy-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.clouds}}</p>
+        <p>Clouds</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-icon name="eye-outline" color="warning"></ion-icon>
+        <p class="value">{{weatherDetails.current.visibility}}</p>
+        <p>Visibility</p>
+      </ion-col>
+    </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-card>

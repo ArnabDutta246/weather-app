@@ -10,7 +10,10 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import { TemperaturePipe } from './pipes/temperature/tempareture.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+   // TemperaturePipe
+  ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

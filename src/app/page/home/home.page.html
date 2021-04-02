@@ -1,27 +1,8 @@
 <ion-content>
   <ion-grid>
-  <!-- ============= [ Locaiton ] ================ -->
-  <ion-item>
-    <ion-label slot="start" class="ion-text-wrap">
-      <h3 class="">{{demoData.timezone}}</h3>
-    </ion-label>
-    <ion-icon name="globe" slot="end" color="warning"></ion-icon>
-  </ion-item>
-  <!-- ============= [ Data card ] ================ -->
-  <ion-card class="ion-margin">
-    <ion-row>
-      <ion-col size="6">
-        <img [src]="'https://openweathermap.org/img/w/'+demoData.current.weather[0].icon+'.png'" alt="weather-app" style="height: 140px;width: 140px;">
-      </ion-col>
-      <ion-col size="6">
-       <h4 class="color-white">{{demoData.current.weather[0].description | titlecase}}</h4>
-       <h1 style="font-size:55px" class="color-white">
-        {{demoData.current.temp | temperature}} &#176;
-       </h1>
-      </ion-col>
-    </ion-row>
-  </ion-card>
+  <app-location-name [cityWeather]="cityWeather"></app-location-name>
 
+  <app-curr-loc-weather [cityWeather]="cityWeather"></app-curr-loc-weather>
  </ion-grid>
 </ion-content>
 

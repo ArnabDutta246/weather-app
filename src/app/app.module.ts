@@ -10,6 +10,7 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

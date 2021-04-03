@@ -1,0 +1,23 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>forcast</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="ion-text-center ion-margin-top">
+  <ion-text color="medium">
+    <small>
+      <ion-icon name="earth"></ion-icon> Your location
+    </small>
+  </ion-text>
+    <ion-text class="warning">
+      <h4 class="ion-no-margin">{{cityWeather.timezone}}</h4>
+    </ion-text>
+  </div>
+  <app-line-chart #lineChart [data]="data"></app-line-chart>
+  <ion-list>
+    <app-daily-weather-card></app-daily-weather-card>
+  </ion-list>
+ 
+</ion-content>

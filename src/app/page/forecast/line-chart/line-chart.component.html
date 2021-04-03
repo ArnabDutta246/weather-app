@@ -1,0 +1,21 @@
+<ion-card class="welcome-card" mode="ios">
+  <ion-card-header>
+    <ion-card-subtitle>Next five days forecast</ion-card-subtitle>
+    <!-- <ion-card-title>Game of Thrones</ion-card-title> -->
+  </ion-card-header>
+  <ion-card-content>
+    <ion-segment (ionChange)="segmentChanged($event)" mode="ios" value="temperature" color="warning">
+      <ion-segment-button value="temperature" color="warning" layout="icon-start">
+        <ion-label color="warning">Temperature</ion-label>
+        <ion-icon name="thermometer-outline" color="warning"></ion-icon>
+    
+      </ion-segment-button>
+      <ion-segment-button value="humidity" color="primary" layout="icon-start">
+        <ion-label color="primary">Humidity</ion-label>
+        <ion-icon name="water-outline" color="primary"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+    <br>
+    <canvas #lineChart></canvas>
+  </ion-card-content>
+</ion-card>

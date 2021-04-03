@@ -6,6 +6,12 @@ export const appMenus = [
    tab: 'home',
   },
   {
+   title: 'Forecast',
+   url: 'forecast',
+   icon: 'megaphone',
+   tab: 'forecast',
+  },
+  {
    title: 'Search',
    url: 'search',
    icon: 'search',

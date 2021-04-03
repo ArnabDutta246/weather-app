@@ -1,0 +1,5 @@
+<ion-card class="ion-text-center ion-no-margin ion-padding">
+<p>{{weatherDetails.dt | unixTimeConverter }}</p>
+<img [src]="'https://openweathermap.org/img/w/'+weatherDetails.weather[0].icon+'.png'"  alt="weather_icon">
+<h4>{{weatherDetails.temp | temperature}} &#176;</h4>
+</ion-card>

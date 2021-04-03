@@ -7,6 +7,9 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { TemperaturePipe } from 'src/app/pipes/temperature/tempareture.pipe';
 import { CurrLocWeatherComponent } from '../components/curr-loc-weather/curr-loc-weather.component';
+import { TodaysHourlyListComponent } from '../components/todays-hourly-list/todays-hourly-list.component';
+import { HourlyCardComponent } from '../components/todays-hourly-list/hourly-card/hourly-card.component';
+import { UnixTimeConverterPipe } from 'src/app/pipes/unixTimeConverter/unix-time-converter.pipe';
 
 
 @NgModule({
@@ -14,12 +17,15 @@ import { CurrLocWeatherComponent } from '../components/curr-loc-weather/curr-loc
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
   declarations: [
     HomePage,
-   TemperaturePipe,
-   CurrLocWeatherComponent,
+    TemperaturePipe,
+    UnixTimeConverterPipe,
+    CurrLocWeatherComponent,
+    TodaysHourlyListComponent,
+    HourlyCardComponent
   ],
   exports:[HomePage]
 })

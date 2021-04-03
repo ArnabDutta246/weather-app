@@ -1,46 +1,54 @@
-<ion-row class="ion-margin ion-padding weatherDataCard">
+<ion-row class="ion-padding weatherDataCard">
  <ion-col size="8">
-  <p class="area">{{weatherDetails.timezone}}</p>
+  <ion-text color="medium">
+    <small class="area">{{weatherDetails.timezone}}</small>
+  </ion-text>
+  <ion-text color="warning">
   <h1 class="temperature">{{weatherDetails.current.temp | temperature}} &#176;</h1>
-  <ion-badge color="warning">{{weatherDetails.current.weather[0].description | titlecase}}</ion-badge>
+  </ion-text>
  </ion-col>
-  <ion-col size="4">
+  <ion-col size="4" class="ion-text-center">
     <img [src]="'https://openweathermap.org/img/w/'+weatherDetails.current.weather[0].icon+'.png'" alt="weather-app">
+    <ion-badge color="warning">{{weatherDetails.current.weather[0].description | titlecase}}</ion-badge>
   </ion-col>
 
   <ion-col>
     <ion-row>
-      <ion-col>
+      <ion-col class="ion-text-left">
         <ion-icon name="thermometer-outline" color="warning" class="ion-margin-right"></ion-icon>
-        <span class="value">{{weatherDetails.current.pressure}}</span>
+        <ion-text color="medium"><span class="value">{{weatherDetails.current.pressure}}</span></ion-text>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-text-center">
         <ion-icon name="water-outline" color="warning" class="ion-margin-right"></ion-icon>
-        <span class="value">{{weatherDetails.current.humidity}}</span>
+        <ion-text color="medium">
+          <span class="value" color="medium">{{weatherDetails.current.humidity}}</span>
+        </ion-text>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-text-right">
         <ion-icon name="cloudy-outline" color="warning" class="ion-margin-right"></ion-icon>
-        <span class="value">{{weatherDetails.current.clouds}}</span>
+        <ion-text color="medium">
+          <span class="value" color="medium">{{weatherDetails.current.clouds}}</span>
+        </ion-text>
       </ion-col>
     </ion-row>
   </ion-col>
 </ion-row>
 
-<ion-row class="">
+<ion-row class="ion-no-margin">
   <ion-col class="ion-padding">
     <div>
       <ion-icon name="sunny" color="warning"></ion-icon>
-      <small class="medium"> Dawn</small>
+      <!-- <small class="medium"> {{weatherDetails.current.sunrise | date:'shortTime'}}</small> -->
+       <small class="medium"> {{weatherDetails.current.sunrise | unixTimeConverter}}</small>
     </div>
-    <p>{{weatherDetails.current.sunrise | date:'shortTime'}}</p>
   </ion-col>
   <ion-col class="ion-padding ion-text-right">
     <div>
-      <small class=""> Evening </small>
+      <!-- <small class=""> {{weatherDetails.current.sunset | date:'shortTime'}} </small> -->
+      <small class="medium"> {{weatherDetails.current.sunset | unixTimeConverter}}</small>
       <ion-icon name="moon" color="white">
       </ion-icon>
     </div>
-    <p>{{weatherDetails.current.sunset | date:'shortTime'}}</p>
   </ion-col>
 </ion-row>
 

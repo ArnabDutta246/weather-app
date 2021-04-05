@@ -16,8 +16,12 @@
     </ion-text>
   </div>
   <app-line-chart #lineChart [data]="data"></app-line-chart>
-  <ion-list>
-    <app-daily-weather-card></app-daily-weather-card>
-  </ion-list>
- 
+    <ion-text color="medium" class="ion-margin">
+      <small>Next few days</small>
+    </ion-text>
+    <ion-slides pager="false" [options]="slideOpts" mode="ios" class="ion-margin-top">
+      <ion-slide *ngFor="let weatherDetails of cityWeather.daily;let i=index" tappable>
+        <app-daily-weather-card [weatherDetails]="weatherDetails" ></app-daily-weather-card>
+      </ion-slide>
+    </ion-slides> 
 </ion-content>

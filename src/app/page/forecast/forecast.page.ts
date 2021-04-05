@@ -15,31 +15,14 @@ export class ForecastPage implements OnInit,AfterViewInit {
   cityWeather = DemoData;
   bars:any;
 
-  //  // Data
-  // chartData: ChartDataSets[] = [{ data: [65, 59, 80, 81, 56, 55, 40, 10, 5, 50, 10, 15], label: 'Stock price' }];
-  // chartLabels: Label[];
- 
-  // // Options
-  // chartOptions = {
-  //   responsive: true,
-  //   scales: {
-  //   yAxes: [
-  //   {
-  //   ticks: {
-  //   beginAtZero: true
-  //   }
-  //   }
-  //   ]
-  //   }
-  //   }
-  // chartColors: Color[] = [
-  //   {
-  //     borderColor: '#000000',
-  //     backgroundColor: '#ff00ff'
-  //   }
-  // ];
-  // chartType = 'line';
-  // showLegend = false;
+   slideOpts = {
+    initialSlide: 0,
+    speed: 400,
+    slidesPerView:2.4,
+    slidesOffsetBefore:3,
+    spaceBetween:3,
+    freeMode:true
+  };
 
   constructor() { }
 

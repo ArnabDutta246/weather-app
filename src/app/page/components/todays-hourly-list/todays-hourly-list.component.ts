@@ -12,7 +12,7 @@ export class TodaysHourlyListComponent implements OnInit,OnChanges {
   public weatherDetails:any;
 
   slideOpts = {
-    initialSlide: 1,
+    initialSlide: 0,
     speed: 400,
     slidesPerView:2.4,
     slidesOffsetBefore:3,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-daily-weather-card',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./daily-weather-card.component.scss'],
 })
 export class DailyWeatherCardComponent implements OnInit {
-
+  @Input() weatherDetails:any;
   constructor() { }
 
   ngOnInit() {}

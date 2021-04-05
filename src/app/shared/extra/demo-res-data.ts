@@ -197,7 +197,7 @@ export const DemoData =
         },
     ],
 daily: [
-        {
+    {
       dt: 1595268000,
       sunrise: 1608124431,
       sunset: 1608160224,
@@ -232,6 +232,76 @@ daily: [
       pop: 0.84,
       uvi: 2.41
     },
+    {
+      dt: 1595268000,
+      sunrise: 1608124431,
+      sunset: 1608160224,
+      temp: {
+        day: 278.14,
+        min: 273.15,
+        max: 279.4,
+        night: 273.15,
+        eve: 275.82,
+        morn: 275.35
+      },
+      feels_like: {
+        day: 273.53,
+        night: 270.26,
+        eve: 271.89,
+        morn: 272.11
+      },
+      pressure: 1021,
+      humidity: 70,
+      dew_point: 273.27,
+      wind_speed: 3.74,
+      wind_deg: 323,
+      weather: [
+        {
+          id: 803,
+          main: 'Clouds',
+          description: 'broken clouds',
+          icon: '04d'
+        }
+      ],
+      clouds: 60,
+      pop: 0.84,
+      uvi: 2.41
+    },
+    {
+      dt: 1595268000,
+      sunrise: 1608124431,
+      sunset: 1608160224,
+      temp: {
+        day: 278.14,
+        min: 273.15,
+        max: 279.4,
+        night: 273.15,
+        eve: 275.82,
+        morn: 275.35
+      },
+      feels_like: {
+        day: 273.53,
+        night: 270.26,
+        eve: 271.89,
+        morn: 272.11
+      },
+      pressure: 1021,
+      humidity: 70,
+      dew_point: 273.27,
+      wind_speed: 3.74,
+      wind_deg: 323,
+      weather: [
+        {
+          id: 803,
+          main: 'Clouds',
+          description: 'broken clouds',
+          icon: '04d'
+        }
+      ],
+      clouds: 60,
+      pop: 0.84,
+      uvi: 2.41
+    },        
   ],
 alerts: [
     {

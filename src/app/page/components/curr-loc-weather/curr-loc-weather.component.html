@@ -3,6 +3,95 @@
   <ion-label slot="end">Good {{dayState.greetings}}</ion-label>  
 </ion-item>
 
+<div class="ion-text-center weather-card">
+  <div>
+    <h5 class="ion-no-margin ion-margin-top">
+      <ion-text color="warning">{{weatherDetails.timezone | regionCityDividar:'City'}}</ion-text>
+    </h5>
+  </div>
+  <div>
+    <small>
+      <ion-text color="medium">{{weatherDetails.timezone | regionCityDividar:'Region'}}</ion-text>
+    </small>
+  </div>
+  <div class="date">
+    <span>
+      <ion-text>{{weatherDetails.current.dt | unixTimeConverter:'days'}}, </ion-text>
+    </span>
+    <span>
+      <ion-text>{{ weatherDetails.current.dt | unixTimeConverter:'date'}}, </ion-text>
+    </span>
+    <span>
+      <ion-text>{{ weatherDetails.current.dt | unixTimeConverter}}</ion-text>
+    </span>
+  </div>
+  <div>
+    <img [src]="'https://openweathermap.org/img/w/'+weatherDetails.current.weather[0].icon+'.png'" alt="weather-app">
+  </div>
+  <div>
+    <h1 class="ion-no-margin">
+      <ion-text>{{weatherDetails.current.temp | temperature}} &#176;
+      </ion-text>
+    </h1>
+  </div>
+  <!-- <div>
+    <span><ion-text>{{weatherDetails.current.weather[0].main | titlecase}}</ion-text></span>
+  </div> -->
+  <div>
+    <small><ion-text color="medium">weather feel {{weatherDetails.current.weather[0].description | titlecase}}</ion-text></small>
+  </div>
+</div>
+
+<ion-row class="ion-padding ion-margin-right ion-margin-left">
+  <ion-col>
+    <div class="ion-text-center" style="border-right:1px solid grey">
+     <small class="ion-no-margin">
+       <ion-text>
+        {{weatherDetails.current.pressure}}
+       </ion-text>
+     </small>
+     <div>
+       <small>
+         <ion-text color="medium">
+           pressure
+         </ion-text>
+       </small>
+     </div>
+    </div>
+  </ion-col>
+  <ion-col>
+      <div class="ion-text-center" style="border-right:1px solid grey">
+        <small class="ion-no-margin">
+          <ion-text>
+            {{weatherDetails.current.humidity}}
+          </ion-text>
+        </small>
+        <div>
+          <small>
+            <ion-text color="medium">
+              humidity
+            </ion-text>
+          </small>
+        </div>
+      </div>
+  </ion-col>
+  <ion-col>
+      <div class="ion-text-center">
+        <small class="ion-no-margin">
+          <ion-text>
+            {{weatherDetails.current.clouds}}
+          </ion-text>
+        </small>
+        <div>
+          <small>
+            <ion-text color="medium">
+              clouds
+            </ion-text>
+          </small>
+        </div>
+      </div>
+  </ion-col>
+</ion-row>
 
 
 <!-- 

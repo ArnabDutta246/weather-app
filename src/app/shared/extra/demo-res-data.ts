@@ -35,7 +35,7 @@ export const DemoData =
   ],
     "hourly": [
         {
-            dt: 1617426000,
+            dt: 1618330768,
             temp: 303.15,
             feels_like: 306.39,
             pressure: 1010,
@@ -198,7 +198,7 @@ export const DemoData =
     ],
 daily: [
     {
-      dt: 1595268000,
+      dt: 1618330768,
       sunrise: 1608124431,
       sunset: 1608160224,
       temp: {

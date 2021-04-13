@@ -1,15 +1,20 @@
 
-<ion-item>
+<!-- <ion-item>
   <ion-text color="medium" slot="start">
     <p> Today</p>
   </ion-text>
   <ion-button slot="end" fill="clear" color="medium" size="large" (click)="navigatePages()">
     <ion-icon name="ellipsis-horizontal"></ion-icon>
   </ion-button>
-</ion-item>
+</ion-item> -->
 
 <div class="ion-padding">
-  <ion-slides pager="false" [options]="slideOpts" mode="ios">
+  <small>
+    <ion-text color="medium">
+      Todays hourly forcast
+    </ion-text>
+  </small>
+  <ion-slides pager="false" [options]="slideOpts" mode="ios" class="ion-margin-top">
     <ion-slide *ngFor="let hourly of weatherDetails.hourly" tappable>
       <app-hourly-card [hourly]="hourly"></app-hourly-card>
     </ion-slide>

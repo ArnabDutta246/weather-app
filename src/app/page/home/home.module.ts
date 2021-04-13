@@ -10,6 +10,7 @@ import { CurrLocWeatherComponent } from '../components/curr-loc-weather/curr-loc
 import { TodaysHourlyListComponent } from '../components/todays-hourly-list/todays-hourly-list.component';
 import { HourlyCardComponent } from '../components/todays-hourly-list/hourly-card/hourly-card.component';
 import { UnixTimeConverterPipe } from 'src/app/pipes/unixTimeConverter/unix-time-converter.pipe';
+import { RegionCityDividarPipe } from 'src/app/pipes/region-city-divider/region-city-dividar.pipe';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { UnixTimeConverterPipe } from 'src/app/pipes/unixTimeConverter/unix-time
     HomePage,
     TemperaturePipe,
     UnixTimeConverterPipe,
+    RegionCityDividarPipe,
     CurrLocWeatherComponent,
     TodaysHourlyListComponent,
     HourlyCardComponent

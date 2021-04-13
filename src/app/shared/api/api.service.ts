@@ -29,9 +29,7 @@ export class ApiService {
   constructor(
     private http:HttpClient
     ) {
-      //init call
-      this.setUpUrl(this.myLocation.lat,this.myLocation.long,this.ifIncludeCurrentHourly);
-    }
+  }
 
   // set the url
   setUpUrl(lat,lon,includeText):Observable<any>{

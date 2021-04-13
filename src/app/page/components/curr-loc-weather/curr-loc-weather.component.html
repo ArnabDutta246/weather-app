@@ -1,3 +1,11 @@
+<ion-item>
+  <ion-icon [name]="dayState.icon" slot="start" [color]="dayState.color"></ion-icon>
+  <ion-label slot="end">Good {{dayState.greetings}}</ion-label>  
+</ion-item>
+
+
+
+<!-- 
 <ion-row class="ion-padding weatherDataCard">
  <ion-col size="8">
   <ion-text color="medium">
@@ -38,19 +46,19 @@
   <ion-col class="ion-padding">
     <div>
       <ion-icon name="sunny" color="warning"></ion-icon>
-      <!-- <small class="medium"> {{weatherDetails.current.sunrise | date:'shortTime'}}</small> -->
-       <small class="medium"> {{weatherDetails.current.sunrise | unixTimeConverter}}</small>
+     <small class="medium"> {{weatherDetails.current.sunrise | date:'shortTime'}}</small> -->
+       <!-- <small class="medium"> {{weatherDetails.current.sunrise | unixTimeConverter}}</small>
     </div>
   </ion-col>
   <ion-col class="ion-padding ion-text-right">
     <div>
-      <!-- <small class=""> {{weatherDetails.current.sunset | date:'shortTime'}} </small> -->
-      <small class="medium"> {{weatherDetails.current.sunset | unixTimeConverter}}</small>
+      <small class=""> {{weatherDetails.current.sunset | date:'shortTime'}} </small> -->
+      <!-- <small class="medium"> {{weatherDetails.current.sunset | unixTimeConverter}}</small>
       <ion-icon name="moon" color="white">
       </ion-icon>
     </div>
   </ion-col>
-</ion-row>
+</ion-row> -->
 
 
 
